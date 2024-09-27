@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estilo para el contenedor de la imagen y el texto */
+.logo-text-container {
+    text-align: center;
+    padding-top: 10px;
+    
+    background-color: #234061;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+/* Contenedor del logo y el texto a los lados */
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Tamaño de la imagen */
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%; /* Si quieres los bordes redondeados */
+}
+
+/* Estilos para los textos a la izquierda y derecha de la imagen */
+.text-left, .text-right {
+    font-size: 1.7rem;
+    color: #ffffff !important; /* Aseguramos que el texto sea negro */
+    margin: 0 4px;
+}
+
+/* Estilo para el texto debajo del logo */
+.text-below {
+    font-size: 1.2rem;
+    color: #ffffff !important; /* Aseguramos que el texto sea negro */
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logo-row {
+        flex-direction: column; /* En pantallas pequeñas, mostrar en columna */
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50px; /* Aún más pequeño para pantallas muy pequeñas */
+    }
+}
+
+
+/*
+Estilos para el contenido
+¨*
+/
+/* Estilo del contenedor principal */
+.container {
+    width: 100%;
+    height: 100%; /* Toma la altura completa de la pantalla */
+    text-align: center;
+}
+
+/* Lado izquierdo */
+
+
+/* Media query para pantallas más pequeñas */
+
+
+/*
+MODO OSCURO
+
+*
+
+*/
+
+/* Modo Oscuro */
+/* Estilos del interruptor de modo oscuro */
+.dark-mode-switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #4c4c4c;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-switch .switch-toggle {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-switch .moon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
+.dark-mode-switch .sun {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #f1c40f;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Cambios en modo oscuro */
+.dark-mode .dark-mode-switch {
+    background-color: #ffa726;
+}
+
+.dark-mode .dark-mode-switch .switch-toggle {
+    left: 32px;
+}
+
+.dark-mode .dark-mode-switch .moon {
+    opacity: 0;
+}
+
+.dark-mode .dark-mode-switch .sun {
+    opacity: 1;
+}
+
+
+.dark-mode .text-left, .dark-mode .text-right, .dark-mode .text-below {
+    color: #ffffff;
+}
+
+.dark-mode .left-side, .dark-mode .right-side  {
+    padding: 20px;
+    color: #f0f0f0;
+
+    border-radius: 8px;
+    background-color: #1a1a1a
+
+}
+
+.dark-mode body {
+    color: #E0E0E0; /* Texto claro */
+    font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #E0E0E0; /* Texto claro */
+}
+/* Modo oscuro para la estructura del logo y los textos */
+.dark-mode .logo-text-container {
+    background-color: #1a1a1a; /* Fondo oscuro para el contenedor principal */
+}
+
+
+
+.cipher-switch {
+    padding: 20px; /* Espaciado interno */
+
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+.cipher-switch label {
+    margin-right: 20px; /* Espaciado entre los labels */
+}
+
